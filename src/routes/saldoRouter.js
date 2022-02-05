@@ -1,6 +1,6 @@
 import express from "express";
 import { getSaldo, postSaldo } from "../controllers/saldoControllers.js";
-import validaSchemaSaldo from "../middlewares/validateSaldo.js";
+import validaSchemaSaldo from "../middlewares/validateSchemaSaldo.js";
 import validateToken from "../middlewares/validateToken.js";
 
 const saldoRoute = express.Router();

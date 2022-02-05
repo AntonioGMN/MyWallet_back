@@ -5,6 +5,7 @@ export default function validaSchemaSaldo(req, res, next) {
 
 	if (validation.error) {
 		const messageErro = validation.error.details.map((m) => m.message);
+		console.log(messageErro);
 		return res.status(422).send(messageErro);
 	}
 
