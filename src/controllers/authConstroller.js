@@ -33,6 +33,5 @@ export async function signIn(req, res) {
 		});
 
 		res.send(token);
-		console.log(token);
 	} else return res.sendStatus(401);
 }
