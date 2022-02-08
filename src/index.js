@@ -1,5 +1,7 @@
 import express, { json } from "express";
 import cors from "cors";
+import dotenv from "dotenv";
+dotenv.config();
 
 import authRoute from "./routes/authRouter.js";
 import saldoRoute from "./routes/saldoRouter.js";
