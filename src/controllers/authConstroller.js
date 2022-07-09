@@ -31,7 +31,7 @@ export async function signIn(req, res) {
 			userID: user._id,
 			token,
 		});
-
-		res.send(token);
-	} else return res.sendStatus(401);
+		res.status(202).send(token);
+	}else res.sendStatus(409)
+	
 }

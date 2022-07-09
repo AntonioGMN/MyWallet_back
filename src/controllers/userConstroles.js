@@ -3,7 +3,7 @@ import db from "../db.js";
 export async function getUser(req, res) {
 	try {
 		const user = res.locals.user;
-		res.send(user).Status(200);
+		res.status(200).send(user);
 	} catch {
 		res.sendStatus(500);
 	}
