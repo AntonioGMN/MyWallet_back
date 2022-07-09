@@ -31,7 +31,7 @@ To run this app you need to have a mongo DB server already running, besides a .e
 ```bash
 npm install
 ```
-3. Run the mongo serve 
+3. Run the mongo server 
 
 ```bash
 mongod --dbpath ~/.mongo
