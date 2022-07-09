@@ -1,6 +1,6 @@
 # My Wallet
 
-The back-end of a web app to register your financial transactions, both incomings and outgoings. The front-end of this app is at https://github.com/JefersonBatista/my-wallet-frontend.
+The back-end of a web app to register your financial transactions, both incomings and outgoings.
 
 You can send requests to it in the URL https://github.com/AntonioGMN/MyWallet_front
 
