@@ -4,7 +4,7 @@ import validateToken from "../middlewares/validateToken.js";
 
 const userRoute = express.Router();
 
-userRoute.use(validateToken);
+//userRoute.use(validateToken);
 userRoute.get("/user", getUser);
 userRoute.delete("/logout", logout);
 
