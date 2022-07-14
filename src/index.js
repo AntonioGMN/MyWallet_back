@@ -11,11 +11,12 @@ const serve = express();
 serve.use(cors());
 serve.use(express.json());
 
+serve.get('/', (req, res)=> {res.send("ta tudo ok")})
+
 serve.use(authRoute);
 serve.use(saldoRoute);
 serve.use(userRoute);
 
-serve.get('/', (req, res)=> {res.send("ok")})
 
 serve.listen(process.env.PORT, () =>
 	console.log("Server running on port " + process.env.PORT)
