@@ -4,7 +4,7 @@ import validaSchemaSaldo from "../middlewares/validateSchemaSaldo.js";
 import validateToken from "../middlewares/validateToken.js";
 
 const saldoRoute = express.Router();
-//saldoRoute.use(validateToken);
+saldoRoute.use(validateToken);
 saldoRoute.post("/saldo", validaSchemaSaldo, postSaldo);
 saldoRoute.get("/saldo", getSaldo);
 
